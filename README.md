@@ -4,13 +4,14 @@ Simple standalone Windows executable to show or hide the mouse cursor. ~~May or 
 ## Usage
 
 Call CursorCloak.exe from a terminal or script. Append either `hide` or `show` as the first argument.
-`CursorCloak hide` - Hide mouse cursor
-`CursorCloak show` - Restore mouse cursor
+
+`CursorCloak hide` - Hide mouse cursor  
+`CursorCloak show` - Restore mouse cursor  
 
 ### Additional arguments (after first arg, not positional):
 
-`q` - Quiet; do not print messages (except error messages)
-`qq` - Completely quiet
+`q` - Quiet; do not print messages (except error messages)  
+`qq` - Completely quiet  
 
 ## Credits
 
