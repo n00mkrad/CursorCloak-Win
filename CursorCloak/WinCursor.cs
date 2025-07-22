@@ -2,6 +2,7 @@
 using System.Runtime.InteropServices;
 
 namespace CursorCloak;
+
 internal class WinCursor
 {
     static WinCursor()

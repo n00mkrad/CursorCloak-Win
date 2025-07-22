@@ -13,6 +13,7 @@ internal class Program
         ErrorQuiet = additionalArgs.Contains("qq");
         Quiet = ErrorQuiet || additionalArgs.Contains("q");
 
+
         if (arg == "show")
         {
             SetCursorVisibility(true);
@@ -23,6 +24,15 @@ internal class Program
         }
         else
         {
+
+            if (ShellChecks.StartedByDoubleClick())
+            {
+                Console.WriteLine("This application needs to be run from a terminal (e.g. cmd) or script.");
+                Console.WriteLine("\nPress any key to exit...");
+                Console.ReadLine();
+                return;
+            }
+
             Log("No valid argument passed. Please call with \"hide\" or \"show\".");
         }
     }
